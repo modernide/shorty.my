@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>URL Shortener</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <style>
+      body {
+        background-color: #f2f2f2;
+        padding: 70px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <h1>shorty.my</h1>
+      <p>A url shortener written in Node.js</p>
+      <hr />
+      <h3>Pass a url and get a short one back</h3>
+      For example: <br />
+      <code class="w3-codespan">https://shorty.my/create/?url=https://www.foo.com</code>
+      <b> may return:</b><br />
+      <code class="w3-codespan">https://shorty.my/arjh3</code>
+      <br/>
+      <br/>
+      <form action="/create/">
+        <input type="text" id="url" name="url" value="https://www.google.com"><br/><br/>
+        <input type="submit" value="Submit">
+      </form> 
+      <br /><br /><br />By using this site, you agree to our
+      <a href="/tos">Terms Of Service</a> |
+      <a href="https://github.com/modernide">By modernide</a> |
+      <a href="mailto:hello@shorty.my">Email Us</a>
+    </center>
+  </body>
+</html>
