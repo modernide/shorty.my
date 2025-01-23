@@ -7,10 +7,10 @@ const mysql = require('mysql')
 var port = 8080
 
 var con = mysql.createConnection({
-  host: "[HOST URL]",
-  user: "[USERNAME]",
-  password: "[PASSWORD]",
-  database: "[DATABASE NAME]"
+  host: process.env.HOST,
+  user: process.env.USER,
+  password: process.env.PASSWORD,
+  database: process.env.NAME
 });
 //----- END CONFIG -----//
 
