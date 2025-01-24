@@ -34,7 +34,7 @@ http.createServer(function (req, res) {
         } else {
           con.query(`INSERT INTO urls (tagID, target) VALUES ('${temp}', '${decodeURIComponent(req.url.split('/create/?url=')[1])}')`, (err) => {
             if (err) throw err;
-            res.write(`URL Shortened at localhost:8080/${temp}`)
+            res.write(`URL Shortened at ${process.env.URL}/${temp}`)
             res.end();
           })
         }
