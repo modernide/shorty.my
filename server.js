@@ -11,7 +11,7 @@ var con = mysql.createConnection({
   user: process.env.USER,
   password: process.env.PASSWORD,
   database: process.env.NAME,
-  port: process.env.PORT
+  port: process.env.DBPORT
 });
 //----- END CONFIG -----//
 
